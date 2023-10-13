@@ -18,19 +18,19 @@ public class Xpath {
 		//it open the application
 		driver.get("https://www.facebook.com/");
 		//address of email text field using X path attributes
-		driver.findElement(By.xpath("//input[@name-'email']")).sendKeys("Suresh");
+		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("Suresh");
 		Thread.sleep(3000);
 		//address of password text field using x path contains attributes 
-		driver.findElement(By.xpath("//contains[@id,'email']")).sendKeys("kumar");
+		driver.findElement(By.xpath("//input[contains(@name,'pass')]")).sendKeys("kumar");
 		Thread.sleep(3000);
 		//address of forgotten password using xpath text
-		//driver.findElement(By.xpath("//a[text()='Forgotten password']")).click();
+		 // driver.findElement(By.xpath("//a[text()='Forgotten password?']")).click();
 		//Address of forgotten password using xpath contains
-		driver.findElement(By.xpath("//a[contains(text(),'Forgotten password']")).click();
+		driver.findElement(By.xpath("//a[contains(text(),'Forgotten')]")).click();
 		
 	}
 		
-		
+	
 		
 
 }
